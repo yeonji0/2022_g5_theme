@@ -181,7 +181,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <?
 if(defined('_INDEX_')) { // index에서만 실행
-?>
+}?>
 
 	<ul class="slide">
 		<li><img src="<?echo G5_THEME_URL?>/img/img1.jpg" alt=""></li>

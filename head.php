@@ -36,15 +36,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_IMG_URL ?>/logo.svg" alt="<?php echo $config['cf_title']; ?>"></a>
         </div>
     
-    
-        
-    </div>
-    
-    <nav id="gnb">
+        <nav id="gnb">
         <h2>메인메뉴</h2>
         <div class="gnb_wrap">
             <ul id="gnb_1dul">
-                <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li>
+                
                
                <?php
 				$menu_datas = get_menu_db(0, true);
@@ -68,6 +64,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             
         </div>
     </nav>
+        
+    </div>
+    
+   
  
 </div>
 <!-- } 상단 끝 -->

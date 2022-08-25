@@ -29,3 +29,28 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
         
     </div>
 </div>
+
+<div class="sec01">
+        <div class="titleWrap">
+            <h3><a href="#">랜더스소식</a></h3>
+            <p>SSG랜더스의 생생한 소식을 전해드립니다.</p>
+        </div>
+            <ul class="contentWrap">
+                <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, facilis?</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="" alt="">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, facilis?</p>
+                    </a>
+                </li>
+            </ul>
+
+       
+    </div>

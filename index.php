@@ -15,10 +15,17 @@ if(G5_COMMUNITY_USE === false) {
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 <style>
-    .visual{height: 200px;background: skyblue;}
+    .visual{
+        height: 300px;
+        background-image: url(<? echo G5_THEME_IMG_URL?>/main.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        }
 </style>
 <div class="visual">
-    test 
+    
 </div>
 
 

@@ -75,11 +75,55 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <hr>
 
+<style>
+    .visual{
+        background: pink;height: 200px;
+        display: flex;justify-content: center; align-items:center;
+        background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+        color:white;
+    }
+    .visual h2{font-size:2em;}
+    .subTopBg_01{
+        background: skyblue;
+        background-image: url(<? echo G5_THEME_IMG_URL?>/pc01.jpg);
+    }
+    .subTopBg_02{background: orange;
+        background-image: url(<? echo G5_THEME_IMG_URL?>/pc02.jpg);
+    }
+    .subTopBg_03{background: green;
+        background-image: url(<? echo G5_THEME_IMG_URL?>/pc03.jpg);
+    }
+    .subTopBg_04{background: gray;
+        background-image: url(<? echo G5_THEME_IMG_URL?>/pc03.jpg);
+    }
+</style>
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
+    
+<?php if (!defined("_INDEX_")) { ?>
+    <div class="visual" id="page_title">
+        <div class="txtWrap">
+            <h2 class="loc1D"></h2>
+            <p>저희 홈페이지를 찾아주셔서 감사합니다.</p>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+        console.log("111"+$(".loc1D").html())
+        if($(".loc1D").thml() == "회사소개"){
+                $(".txtWrap>.txt").thml("안녕하세요")
+            }
+        }
+    </script>
+    <? }?>
+
     <div id="container_wr" <?php if (defined("_INDEX_")) { ?> style="width:100%" <?php }?> >
-   
+ 
     <div id="container">
+        <? ?>
         <?php if (!defined("_INDEX_")) { ?>
             <h2 id="container_title">
                 <span title="<?php echo get_text($g5['title']); ?>">
